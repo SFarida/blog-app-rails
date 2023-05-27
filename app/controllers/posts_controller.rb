@@ -12,8 +12,8 @@ class PostsController < ApplicationController
     @post = Post.new
   end
 
-  def create 
-    @post = Post.new()
+  def create
+    @post = Post.new
     @post.title = params['title']
     @post.text = params['text']
     @post.author = current_user
