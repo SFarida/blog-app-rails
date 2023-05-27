@@ -3,7 +3,7 @@
         <p>Be the first to add a comment</p>
     </div>
 <% else %>
-    <div class="card border border-black">
+    <div class="border border-black">
         <% post.recent_comments.each do |comment| %>
             <ul class="list-group">
                 <li class="list-group-item border-0"><%= comment.author.name %>: <%= comment.text %></li>
